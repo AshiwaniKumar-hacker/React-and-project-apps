@@ -1,9 +1,7 @@
 .kg-item {
-  background-color: chocolate;
+ color: green;
 }
 
-
-.food-heading{
-  background-color: blue;
-  color:yellow ;
+.button{
+float: right;
 }
