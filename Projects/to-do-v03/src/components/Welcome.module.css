@@ -1,0 +1,12 @@
+.welcome{
+  font-size: 30px;
+  font-weight: bold;
+  border: 2px solid black;
+  height: 50px;
+  width: 300px;
+  background-color: cadetblue;
+  color: yellow;
+  border-radius: 25px;
+  margin: 20px;
+
+}
