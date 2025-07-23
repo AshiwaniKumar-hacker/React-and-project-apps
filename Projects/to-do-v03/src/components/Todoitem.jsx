@@ -1,3 +1,6 @@
+import { TiDelete } from "react-icons/ti";
+
+
 function Todoitem({todoName,todoDate ,onDeleteClick}){
 
 return (
@@ -12,7 +15,7 @@ return (
     <div className="col-2">
       <button type="button" className="btn btn-danger kg-button"
       onClick={()=> onDeleteClick(todoName)}
-      >Delete</button>
+      ><TiDelete /></button>
     </div>
   </div>
   </div>
