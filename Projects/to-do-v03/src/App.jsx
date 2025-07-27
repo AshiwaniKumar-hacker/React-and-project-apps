@@ -8,16 +8,12 @@ import { useState } from "react";
 
 function App() {
 
-const initialTodoItems=[
-
-
-];
-
 const [todoItems,setTodoItems] = useState(initialTodoItems);
 
 const handleNewItem = (itemName,dueDate)=>{
-const newTodoItems=[...todoItems,{name:itemName,dueDate:dueDate}];
-setTodoItems(newTodoItems)
+setTodoItems((currValue)=>
+[...todoItems, {name:itemName,dueDate:dueDate}]
+)
 }
 
 const handleDeleteItem=(todoItemName)=>{
