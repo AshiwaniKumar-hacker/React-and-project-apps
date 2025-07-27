@@ -8,7 +8,7 @@ import { useState } from "react";
 
 function App() {
 
-const [todoItems,setTodoItems] = useState(initialTodoItems);
+const [todoItems,setTodoItems] = useState([]);
 
 const handleNewItem = (itemName,dueDate)=>{
 setTodoItems((currValue)=>
