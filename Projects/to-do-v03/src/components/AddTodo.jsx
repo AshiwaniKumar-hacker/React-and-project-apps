@@ -16,6 +16,9 @@ function AddTodo() {
   };
 
   const handleAddButtonClicked = () => {
+    if(  todoName.length===0 || dueDate.length==0 ){
+      return
+    }
     addNewItem(todoName, dueDate);
     setDueDate("");
     setTodoName("");
@@ -27,6 +30,7 @@ function AddTodo() {
         <div className="col-6">
           <input
             type="text"
+            required
             placeholder="Enter Todo Here"
             value={todoName}
             onChange={handleNameChange}

@@ -7,7 +7,7 @@ export const TodoItemsContext = createContext({
   deleteItem: () => {},
 });
 
-const todoItemsReducer = (currTodoItems, action) => {
+const todoItemsReducer  = (currTodoItems, action) => {
   let newTodoItems = currTodoItems;
   if (action.type === "NEW_ITEM") {
     newTodoItems = [
@@ -19,6 +19,11 @@ const todoItemsReducer = (currTodoItems, action) => {
       (item) => item.name !== action.payload.itemName
     );
   }
+
+  else if(action.type==="NEW_ITEM" && action.payload.itemName.length===0) {
+return
+  }
+
   return newTodoItems;
 };
 
